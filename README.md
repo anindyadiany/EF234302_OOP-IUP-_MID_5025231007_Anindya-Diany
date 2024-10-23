@@ -5,6 +5,7 @@ Midterm exam for OOP by Anindya Diany 5025231007
 
 Test Cases:
 # TREE
+```
 --- 1. [5 points] Building the tree ---
 We will test your work with the following tree:
 ----------------------------------------------- 
@@ -148,8 +149,9 @@ branch(5,branch(3,branch(1,empty,empty),branch(4,empty,empty)),branch(8,branch(7
         4
     3
         1
-
+```
 ## LIST
+```
 --- 8. [5 points] negateAll ---
 list1: -2, 5, -8, 0
 list2 is the negation of list1: 2, -5, 8, 0
@@ -185,4 +187,4 @@ Remove all duplicate copies at list8 into list11: 2, 5, 7, 8, 9
 --- 15. [5 points] skip ---
 Element 5 skipped at list8, assigned into list12: 2, 7, 8, 8, 9
 anindyadianyputri@Anindyas-MacBook-Pro mid % 
-
+```

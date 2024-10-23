@@ -79,14 +79,13 @@ public class Mid extends List {
 //    // 14
     static List removeDuplicate(List a) {
     	 if(a.empty()){
-    	    return a;
-    	 }
-    	 List restWithoutDuplicates = removeDuplicate(a.tail());
-    	 if (!restWithoutDuplicates.empty() &&a.head()==restWithoutDuplicates.head()){
-    	     return restWithoutDuplicates;
-    	 }else{
-    	     return List.cons(a.head(),restWithoutDuplicates);
-    	 }
+            return a;
+        }List rest = removeDuplicate(a.tail());
+        if(!rest.empty() && a.head() ==rest.head()){
+            return rest;
+        }else{
+            return List.cons(a.head(), rest);
+        }
     }
     
 //    // 15
@@ -97,8 +96,9 @@ public class Mid extends List {
     	if(a.head() == x){
             return skip(x, a.tail());
         }else{
-            return List.cons(a.head(),skip(x, a.tail()));
-        
+            return List.cons(a.head(),skip(x,a.tail()));
+
+            
         }
     }
 }   
